@@ -519,12 +519,12 @@ export default class Slider extends PureComponent {
     if (!thumbText) return;
 
     return (
-      <View style={styles.thumbContainer}>
+      <View style={defaultStyles.thumbContainer}>
         {/* If user is sliding, show them the top content */}
         {slidingStart && (
-          <View style={styles.topContainer}>
+          <View style={defaultStyles.topContainer}>
             <Text style={thumbTextStyle}>{thumbText}</Text>
-            <View style={styles.downArrow} />
+            <View style={defaultStyles.downArrow} />
           </View>
         )}
         <Text style={thumbTextStyle}>{thumbText}</Text>
